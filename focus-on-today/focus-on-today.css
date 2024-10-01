@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(190, 250, 168);
+    font-family: 'Poppins';
+}
+
+.heading {
+    font-size: 6rem;
+    color: black;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    color: rgb(17, 183, 17);
+}
+
+.app-container {
+    background-color: white;
+    max-width: 80rem;
+    margin: 0 auto;
+    border-radius: 1.3rem;
+    padding: 5rem 6rem;
+    box-shadow: 0 0 1rem rgb(104, 103, 103);
+    margin-bottom: 8rem;
+}
+
+.top {
+    display: flex;
+}
+
+.today {
+    font-size: 3.5rem;
+    margin-right: 3rem;
+}
+
+.sun {
+    width: 5.7rem;
+}
+
+.raise {
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    color: rgb(104, 102, 102);
+}
+
+.progress-bar {
+    height: 4.5rem;
+    background-color: rgb(190, 250, 168);
+    border-radius: 3rem;
+}
+
+.progress-amount {
+    width: 0;
+    height: 100%;
+    background-color: rgb(17, 183, 17);
+    border-radius: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.progress-amount span {
+    padding-left: 4rem;
+    min-width: max-content;
+}
+
+.error-label {
+    font-size: 1.5rem;
+    color: rgb(255, 56, 56);
+    margin-top: 2rem;
+    position: absolute;
+    display: none;
+}
+
+.show .error-label {
+    display: block;
+}
+
+.goal-container {
+    box-shadow: 0 0 .4rem rgb(104, 103, 103);
+    border-radius: 1.5rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 6.5rem;
+    overflow: hidden;
+}
+
+.checkbox {
+    height: 2.7rem;
+    width: 2.7rem;
+    border: .1rem solid black;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed .checkbox {
+    background-color: rgb(17, 183, 17);
+    border-color: rgb(17, 183, 17);
+}
+
+.tick {
+    width: 55%;
+    display: none;
+}
+
+.completed .tick {
+    display: block;
+}
+
+.goal-input {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    border: none;
+    outline: none;
+}
+
+.completed .goal-input {
+    color: rgb(17, 183, 17);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.goal-input::placeholder {  
+    color: rgb(98, 98, 98);
+}
+
+.quote {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+.maker {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(168, 166, 166);
+}
+
+
+@media(max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media(max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .app-container {
+        width: 70%;
+    }
+}
+@media(max-width: 481px) {
+    html {
+        font-size: 35%;
+    }
+}
