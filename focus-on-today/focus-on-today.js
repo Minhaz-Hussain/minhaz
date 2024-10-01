@@ -2,7 +2,8 @@ const completedCheckbox = document.querySelectorAll('.checkbox');
 const goalInput = document.querySelectorAll('.goal-input');
 const progressBar = document.querySelector('.progress-bar');
 const progressAmount = document.querySelector('.progress-amount');
-const statusQuote = document.querySelector('.raise')
+const statusQuote = document.querySelector('.raise');
+const progressAmountSpan = document.querySelector('.progress-amount span');
 
 const allGoals = JSON.parse(localStorage.getItem('individualGoals')) || {
     first: {
@@ -50,6 +51,8 @@ completedCheckbox.forEach((checkbox) => {
         } else {
             progressBar.classList.add('show')
         };
+
+    
     });
 });
 
@@ -76,3 +79,4 @@ goalInput.forEach((input) => {
         localStorage.setItem('individualGoals', JSON.stringify(allGoals));
     })
 });
+

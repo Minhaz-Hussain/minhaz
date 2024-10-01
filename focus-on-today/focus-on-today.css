@@ -75,8 +75,9 @@ body {
 }
 
 .progress-amount span {
-    padding-left: 4rem;
+    margin: 0 auto;
     min-width: max-content;
+    transition: 1s;
 }
 
 .error-label {
