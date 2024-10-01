@@ -175,7 +175,7 @@ body {
     }
 
     .app-container {
-        width: 70%;
+        width: 80%;
     }
 }
 @media(max-width: 481px) {
