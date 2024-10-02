@@ -11,7 +11,7 @@ html {
 body {
     font-family: 'Poppins';
     background-color: rgb(254, 131, 49);
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
 }
 
 .top {
@@ -142,7 +142,6 @@ a:hover {
     width: 70%;
     margin: 0 auto;
 }
-
 
 .deal-of-the-day-image {
     background-color: white;
@@ -284,6 +283,7 @@ select {
     background-color: white;
     border-radius: 2rem;
     overflow: hidden;
+    margin-bottom: 10rem;
 }
 
 .locations-container iframe {
@@ -312,6 +312,14 @@ select {
     color: rgb(252, 38, 38);
 }
 
+.go-to-top {
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 75%;
+}
+
 @media(max-width: 1200px) {
     html {
         font-size: 55%;
@@ -336,7 +344,7 @@ select {
     .top-picks-container, .combo-offers-container, .locations-container {
         grid-template-columns: 1fr;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     .top-picks-images img {
@@ -344,20 +352,31 @@ select {
     }
 
     .deal-of-the-day-container {
-        width: 90%;
+        width: 100%;
     }
 
     .locations-container {
-        width: 70%;
-    }
-
-    .locations-container iframe {
-        
+        width: 80%;
     }
 
     .locations-container button {
         margin: 0 auto;
         width: 85%;
+    }
+
+    .combo-offers-content h2 {
+        height: 25rem;
+        color: rgb(254, 131, 49);
+    }
+
+    .top-picks-container .item {
+        opacity: 1;
+    }
+
+    .place-order-container button {
+        width: 65%;
+
+        margin-left: 17%;
     }
 }
 
