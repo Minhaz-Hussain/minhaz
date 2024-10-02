@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: rgb(254, 131, 49);
+    padding-bottom: 20rem;
+}
+
+.top {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.restaurant-logo {
+    width: 8rem;
+    margin-left: 7rem;
+}
+
+.navbar {
+    margin: auto 2rem;
+}
+
+.navbar a{
+    font-size: 2.2rem;
+    color: rgb(254, 131, 49);
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+
+a:hover {
+    color: rgb(252, 38, 38);
+    transition: .5s;
+}
+
+.main-image-header {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 7rem;
+    color: white;
+    letter-spacing: .1rem;
+    cursor: default;
+}
+
+.main-image-header span {
+    color: rgb(255, 159, 94);
+    text-shadow: .3rem .3rem rgb(252, 38, 38);
+}
+
+.main-image-header:hover span{
+    color: rgb(252, 38, 38);
+    text-shadow: none;
+    transition: .5s;
+}
+
+.main-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 5rem auto;
+    width: 80%;
+    height: 60rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.main-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#top-picks, #deal-of-the-day, #combo-offers, #place-order, #locations {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-top: 14rem;
+    margin-bottom: 6rem;
+}
+
+.top-picks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.top-picks-container img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.top-picks-container .item {
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.top-picks-container .item:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.item h3 {
+    color: rgb(254, 131, 49);
+    font-size: 3rem;
+    margin: 1.4rem 0;
+}
+
+.item p {
+    font-size: 1.5rem;
+    padding: 0 3rem;
+}
+
+.top-picks-container .item:hover h3{
+    opacity: 1;
+    transition: .5s;
+}
+
+.top-picks-container .item:hover p{
+    opacity: 1;
+    transition: .5s;
+}
+
+.deal-of-the-day-container {
+    padding: 0 10rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.deal-of-the-day-image {
+    background-color: white;
+    height: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.deal-of-the-day-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.deal-of-the-day-container h3 {
+    font-size: 3rem;
+    color: rgb(254, 131, 49);
+}
+
+.deal-of-the-day-container h3 {
+    font-size: 4rem;
+    margin: 5rem 0;
+    padding: 0 7rem;
+}
+
+.deal-of-the-day-container p {
+    font-size: 1.5rem;
+    padding: 0 7rem;
+    margin-bottom: 5rem;
+}
+
+.combo-offers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 0 10rem;
+}
+
+.combo-offers-item {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.combo-offers-item img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    height: 30rem;
+    margin: 0;
+    transition: transform 1s;
+}
+
+.combo-offers-content {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3rem 7rem 3rem;
+}
+
+.combo-offers-content h2 {
+    height: 15rem;
+    color: rgb(254, 131, 49);
+}
+
+.combo-offers-content h3 {
+    font-size: 3rem;
+}
+
+.combo-offers-item:hover .combo-offers-images img{
+    transform: scale(1.1);
+}
+
+.place-order-container {
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 7rem;
+    font-size: 2.5rem;
+}
+
+legend {
+    margin-bottom: 2rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+select {
+    width: 100%;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    cursor: pointer;
+    margin-bottom: 10rem;
+}
+
+.place-order-container button {
+    width: 50%;
+    padding: 3rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+    background-color: rgb(254, 131, 49);
+    font-family: 'Poppins';
+    cursor: pointer;
+    margin-left: 25%;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.place-order-container button:hover {
+    background-color:  rgb(252, 38, 38);
+    transition: .5s;
+}
+
+.locations-container {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.locations-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.locations-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.locations-city button {
+    font-family: 'Poppins';
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 3.5rem 0;
+    color: rgb(254, 131, 49);
+}
+
+.locations-city button:hover {
+    color: rgb(252, 38, 38);
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media(max-width: 1050px) {
+    html {
+        font-size: 45%;
+    }
+}
+@media(max-width: 870px) {
+    html {
+        font-size: 40%;
+    }
+
+}
+@media(max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+
+    .top-picks-container, .combo-offers-container, .locations-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .top-picks-images img {
+        height: 75rem;
+    }
+
+    .deal-of-the-day-container {
+        width: 90%;
+    }
+
+    .locations-container {
+        width: 70%;
+    }
+
+    .locations-container iframe {
+        
+    }
+
+    .locations-container button {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+
+
+
+
+
