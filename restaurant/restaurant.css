@@ -19,11 +19,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 .restaurant-logo {
     width: 8rem;
-    margin-left: 7rem;
+    margin-left: 5rem;
 }
 
 .navbar {
@@ -36,6 +39,10 @@ body {
     font-weight: 800;
     text-decoration: none;
     margin-right: 5rem;
+}
+
+.hamburger-button {
+    display: none;
 }
 
 a:hover {
@@ -388,6 +395,64 @@ select {
 
     .locations-container {
         margin-bottom: 10rem;
+    }
+
+    .restaurant-logo {
+        margin-left: 3rem;
+    }
+
+    .top {
+        position: sticky;
+        top : 0px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .show .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 3rem;
+        padding-right: 8rem;
+        right: 1rem;
+        box-shadow: 0 0 .5rem black;
+        border-radius: 2rem;
+    }
+
+    .show .navbar a {
+        margin: 2rem;
+    }
+
+    .hamburger-button {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .show .hamburger-logo {
+        display: none;
+    }
+
+    .hamburger-logo {
+        font-size: 5rem;
+        text-decoration: none;
+        margin-right: 4rem;
+        color: black;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .show .cross {
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        right: 6.5rem;
+        top: 5rem;
+        cursor: pointer;
     }
 
 }
