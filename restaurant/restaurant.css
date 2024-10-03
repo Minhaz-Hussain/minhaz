@@ -313,11 +313,19 @@ select {
 }
 
 .go-to-top {
+    text-align: center;
+}
+
+.go-to-top a{
     font-size: 4rem;
     text-decoration: none;
     color: white;
     font-weight: 500;
-    margin-left: 75%;
+}
+
+.go-to-top a:hover {
+    color: rgb(252, 38, 38);
+    transition: .5s;
 }
 
 @media(max-width: 1200px) {
@@ -375,9 +383,13 @@ select {
 
     .place-order-container button {
         width: 65%;
-
         margin-left: 17%;
     }
+
+    .locations-container {
+        margin-bottom: 10rem;
+    }
+
 }
 
 
