@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+    --border-color: rgb(206, 206, 206);
+    font-family: 'Nunito';
+    font-weight: 800;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --background-color:  hsl(209, 23%, 22%);
+    --text-color: white;
+    --elements-color: hsl(207, 26%, 17%);
+    --border-color: black;
+}
+
+.main {
+    padding: 5rem 10rem;
+    background-color: var(--elements-color);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid var(--border-color);
+    padding: 3rem 7rem;
+    background-color: var(--background-color);
+}
+
+.top h2 {
+    font-size: 3rem;
+}
+
+.top a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.top img {
+    width: 2rem;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.dark-mode a {
+    margin-top: .1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.light-mode {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.light-mode a {
+    margin-top: .2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.search-bar {
+    display: flex;
+    height: 4rem;
+    position: relative;
+    justify-content: space-between;
+}
+
+.search-bar img {
+    position: absolute;
+    width: 2.5rem;
+    margin-top: 1.8rem;
+    margin-left: 3.5rem;
+}
+
+.search-bar input {
+    font-size: 1.5rem;
+    font-family: 'Nunito';
+    width: 30%;
+    padding: 3rem 0 3rem 10rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgb(30, 30, 30);
+    overflow: hidden;
+    outline: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.search-bar input:focus {
+    width: 50%;
+    transition: 1s;
+}
+
+.filter {
+    font-family: 'Nunito';
+    font-size: 1.5rem;
+    width: 15%;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgb(30, 30, 30);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.countries-container{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.countries-card {
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem rgb(30, 30, 30);
+    overflow: hidden;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.countries-card:hover {
+    transform: scale(1.03);
+}
+
+.card-content {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.card-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.card-content p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.card-content span {
+    font-weight: 500;
+    margin-left: .5rem;
+}
+
+.countries-card img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media(max-width: 1050px) {
+    html {
+        font-size: 45%;
+    }
+}
+@media(max-width: 870px) {
+    html {
+        font-size: 40%;
+    }
+    .countries-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .search-bar input:focus {
+        width: 60%;
+    }
+    
+
+}
+@media(max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+
+    .countries-container{
+        grid-template-columns: 1fr;
+        gap: 10rem;
+    }
+
+    .countries-container img {
+        object-fit: cover;
+        height: 40rem;
+    }
+
+
+    .search-bar img {
+        margin-left: 2rem;
+    }
+    
+    .search-bar input {
+        padding-left: 7rem;
+        width: 55%;
+    }
+
+    .filter {
+        font-size: 1.2rem;
+        width: 35%;
+    }
+
+}

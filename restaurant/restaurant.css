@@ -66,8 +66,8 @@ a:hover {
 }
 
 .main-image-header span {
-    color: rgb(255, 159, 94);
-    text-shadow: .3rem .3rem rgb(252, 38, 38);
+    color: rgb(255, 183, 135);
+    text-shadow: .5rem .5rem rgb(252, 38, 38);
 }
 
 .main-image-header:hover span{
@@ -367,7 +367,6 @@ select {
     .mobile-header {
         display: block;
         color: rgb(255, 159, 94);
-        text-shadow: .2rem .2rem rgb(252, 38, 38);
         font-size: 3rem;
         font-weight: 700;
         margin-top: 2rem;
@@ -378,6 +377,10 @@ select {
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(5px);
     } */
+
+    .restaurant-logo {
+        width: 45%;
+    }
 
     .top-picks-container, .combo-offers-container, .locations-container {
         grid-template-columns: 1fr;
