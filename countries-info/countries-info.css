@@ -16,7 +16,6 @@ body {
     --border-color: rgb(206, 206, 206);
     font-family: 'Nunito';
     font-weight: 800;
-    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -222,7 +221,6 @@ body.dark {
         object-fit: cover;
         height: 40rem;
     }
-
 
     .search-bar img {
         margin-left: 2rem;
